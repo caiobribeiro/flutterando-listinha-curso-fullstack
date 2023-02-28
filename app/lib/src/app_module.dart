@@ -8,7 +8,6 @@ import 'package:realm/realm.dart';
 
 class AppModule extends Module {
   @override
-  @override
   List<Bind> get binds => [
         Bind.instance<Realm>(Realm(config)),
         AutoBind.factory<ConfigurationService>(ConfigurationServiceImpl.new),

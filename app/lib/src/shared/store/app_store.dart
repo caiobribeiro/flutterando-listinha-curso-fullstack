@@ -19,7 +19,9 @@ class AppStore {
 
   void save() {
     _configurationService.saveConfiguration(
-        themeMode.value.name, syncDate.value);
+      themeMode.value.name,
+      syncDate.value,
+    );
   }
 
   void changeThemeMode(ThemeMode? mode) {
